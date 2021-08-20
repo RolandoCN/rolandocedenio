@@ -56,7 +56,7 @@ function mostrarScroll(){
     }
 
     for(var i=0; i<animadoder.length; i++){ //recorremos a cantidad de elemento con clase animadoder
-        let alturaAnimadoDer=animadoder[i].offsetTop; //obtenemos la altura de cada elemento
+        let alturaAnimadoDer=animadoder[i].offsetTop; //obtenemos la altura de cada elemento.
         
         if(alturaAnimadoDer - 700 < scrollTop_){ // 
             animadoder[i].style.opacity=1;
