@@ -645,6 +645,7 @@ progress {
   .container-sm, .container {
     max-width: 540px;
   }
+  
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
@@ -11351,7 +11352,8 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.4rem solid white;
+    /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11411,6 +11413,10 @@ section.resume-section .resume-section-content {
   section.resume-section {
     min-height: 100vh;
   }
+
+  #lista_curso {
+    margin-left:50px
+  }
 }
 @media (min-width: 992px) {
   section.resume-section {
@@ -11419,4 +11425,6 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+  
 }
+

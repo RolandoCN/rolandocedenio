@@ -16,6 +16,33 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/time_line_card.css" rel="stylesheet" />
         <link href="css/time_line_educacion.css" rel="stylesheet" />
+        <link href="css/animacion.css" rel="stylesheet" />
+
+        <style>
+            @media (min-width: 576px) {
+                #lista_curso {
+                     margin-left:50px
+                }
+
+                #lista_contacto {
+                     margin-left:50px
+                }
+  
+            }
+
+            @media (min-width: 992px) {
+                #lista_curso {
+                     margin-left:100px
+                }
+
+                #lista_contacto {
+                     margin-left:100px
+                }
+  
+            }
+
+            
+        </style>
 
         
     </head>
@@ -24,16 +51,16 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Rolando Cedeño N</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/perfil.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/perfil.jpg" width="90%" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sobre_mi">Sobre Mi</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#educacion">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"  href="#educacion">Educación</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiencia">Experiencia</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cursos">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacto">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"  href="#cursos">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"href="#contacto">Contactos</a></li>
                 </ul>
             </div>
         </nav>
@@ -41,16 +68,16 @@
         <div class="container-fluid p-0">
             <!-- sobre_mi-->
             <section class="resume-section" id="sobre_mi">
-                <div class="resume-section-content">
+                <div class="resume-section-content" id="div_about" style="display:none"> 
                     <h2 class="mb-5 titulos">Sobre Mi</h2>
                     
-                    <p class="lead mb-5">Soy Juan Rolando Cedeño Navarrete, tengo conocimiento y experiencia en el área de desarrollo web, he trabajado con tecnologías y lenguajes como PHP, Laravel, Codeigniter, Javascript, Jquery, Ajax, Json, Mysql, Sql, GitHub. Me gusta el autoprendizaje, continuamente adquiero y aprendo nuevas habilidades.</p>
+                    <p class="lead mb-5">Soy Juan Rolando Cedeño Navarrete, tengo conocimiento y experiencia en el área de desarrollo web, he trabajado con tecnologías y lenguajes como PHP, Laravel, Codeigniter, Javascript, Jquery, Ajax, Json, Mysql, Sql, GitHub, Html, Css, Bootstrap, ApiRest. Me gusta el autoprendizaje, continuamente adquiero y aprendo nuevas habilidades.</p>
                     <div class="social-icons">
                         <a style="background-color:rgb(61, 44, 218)"class="social-icon" target="_blank" href="https://www.linkedin.com/in/rolando-cede%C3%B1o-8b1939186"><i class="fab fa-linkedin-in" ></i></a>
                         
                         <a style="background-color:blue"class="social-icon" target="_blank" href="https://www.facebook.com/juanrolando.cedenonavarrete/"><i class="fab fa-facebook-f"></i></a>
 
-                        <a style="background-color:green"class="social-icon" target="_blank" href=https://api.whatsapp.com/send?phone=+593993984665&text=hola><i class="fab fa-whatsapp"></i></a>
+                        <a style="background-color:green"class="social-icon" target="_blank" href=https://api.whatsapp.com/send?phone=+593993984665><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </section>
@@ -61,23 +88,30 @@
                     <h2 class="mb-5 titulos">Educación</h2>
                     
                     <div id="content"> 
-                        <ul class="timeline">
-                            <li class="event" style="color:black" data-date="1999 - 2004">
-                                <h1><strong>Primaria</strong></h1>
-                                <p>Escuela Fiscal Mixta Dr Viliulfo Cedeño.</p>
-                                <p>Calceta - Manabí.</p>
-                            </li>
-                            <li class="event" style="color:black" data-date="2004 - 2009">
-                                <h1>Secundaria (FISICO -MATEMATICO)</h1>
-                                <p>Colegio Fiscal Mixto 13 de Octubre.</p>
-                                <p>Calceta - Manabí.</p>
-                            </li>
-                            </li>
-                            <li class="event" style="color:black" data-date="2011 - 2017">
-                                <h1>Tercer Nivel (INGENIERO INFORMÁTICO)</h1>
-                                <p>Escuela Superior Politécnica Agropecuaria de Manabí</p>
-                                <p>Calceta - Manabí.</p>
-                            </li>
+                        <ul class="timeline animado" >
+                            <div id="primaria">
+                                <li class="event" style="color:black" data-date="1999 - 2004">
+                                
+                                    <h1><strong>Primaria</strong></h1>
+                                    <p class="">Escuela Fiscal Mixta Dr Viliulfo Cedeño.</p>
+                                    <p>Calceta - Manabí.</p>
+                            
+                                </li>
+                            </div>
+                            <div id="secundaria" >
+                                <li class="event" style="color:black" data-date="2004 - 2009">
+                                    <h1>Secundaria (FISICO -MATEMATICO)</h1>
+                                    <p>Colegio Fiscal Mixto 13 de Octubre.</p>
+                                    <p>Calceta - Manabí.</p>
+                                </li>
+                           </div>
+                           <div id="tercer">
+                                <li class="event" style="color:black" data-date="2011 - 2017">
+                                    <h1>Tercer Nivel (INGENIERO INFORMÁTICO)</h1>
+                                    <p>Escuela Superior Politécnica Agropecuaria de Manabí</p>
+                                    <p>Calceta - Manabí.</p>
+                                </li>
+                            </div>
                             
                         </ul>
                     </div> 
@@ -87,102 +121,112 @@
             <!-- educacion-->
 
 
-             <!-- OTro-->
-             <section class="resume-section" id="experiencia">
+             <!-- experiencia-->
+             <section class="resume-section  " id="experiencia">
                 <div class="resume-section-content">
                     <h2 class="mb-5 titulos">Experiencia</h2>
                     <div class="row">
                         <div class="col-lg-7 mx-auto">
                             
                             <!-- timeline_card -->
-                            <ul class="timeline_card">
-                                <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
-                                    <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
-                                    <h2 class="h5 mb-0"style="color:white !important">MC SolucionesInnovadoras S.A.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Desarrollador web<br> <i class="fa fa-clock-o mr-1"></i> Junio, 2021 - Actualidad</span>
-                                    <ul>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Análisis de requeremientos
-                                        </li>
-
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
-                                        </li>
-
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programacion
-                                        </li>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Soporte
-                                        </li>
-                                    </ul>
-                                    
-                                    
-                                </li>
+                            <ul class="timeline_card animadoizq" id="lista_experiencia_" >
                                 
-                                <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
+                                <li class="timeline_card-item rounded ml-3 p-4 shadow " style="background-color: rgb(154, 12, 248);">
                                     <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
-                                    <h2 class="h5 mb-0"style="color:white !important">GADM Chone.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Programador web<br> <i class="fa fa-clock-o mr-1"></i> Dic, 2019 - Ene, 2021</span>
-                                    <ul>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Análisis de requeremientos
-                                        </li>
+                                        <h2 class="h5 mb-0"style="color:white !important;display:none"id="titulo_exp1">MC SolucionesInnovadoras S.A.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Desarrollador web<br> <i class="fa fa-clock-o mr-1"></i> Junio, 2021 - Actualidad</span>
+                                        <ul>
+                                            <li class=" text-small mt-2 font-weight-light"style="color:white !important"> Análisis de requeremientos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programacion
-                                        </li>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Soporte
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
-                                    <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
-                                    <h2 class="h5 mb-0"style="color:white !important">CoolMaster (Guayaquil).</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Auxiliar Técnico<br> <i class="fa fa-clock-o mr-1"></i> Ene, 2019 - Dic, 2019</span>
-                                    <ul>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Auxiliar en refrigeración
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programación
+                                            </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Soporte
+                                            </li>
+                                        </ul>
+                                        
+                                        
+                                    </li>
+                                 
+                                    <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
+                                        <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
+                                        <h2 class="h5 mb-0"style="color:white !important">GADM Chone.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Programador web<br> <i class="fa fa-clock-o mr-1"></i> Dic, 2019 - Ene, 2021</span>
+                                        <ul>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Análisis de requeremientos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programacion
-                                        </li>
-                                    </ul>   
-                                </li>
-                                <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
-                                    <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
-                                    <h2 class="h5 mb-0"style="color:white !important">GADM Bolívar.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Pasante Informático<br> <i class="fa fa-clock-o mr-1"></i> Ene, 2019 - Dic, 2019</span>
-                                    <ul>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Mantenimiento preventivo y correctivo de equipos informáticos
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programación
+                                            </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Soporte
+                                            </li>
+                                        </ul>
+                                    </li>
+                                
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
-                                        </li>
+                                    
+                                    <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
+                                        <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
+                                        <h2 class="h5 mb-0"style="color:white !important">CoolMaster (Guayaquil).</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Auxiliar Técnico<br> <i class="fa fa-clock-o mr-1"></i> Ene, 2019 - Dic, 2019</span>
+                                        <ul>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Auxiliar en refrigeración
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programacion
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Digitador
-                                        </li>
-                                    </ul>   
-                                </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programación
+                                            </li>
+                                        </ul>   
+                                    </li>
+                               
 
-                                <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
-                                    <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
-                                    <h2 class="h5 mb-0"style="color:white !important">ESPAM MFL.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Pasante Informático<br> <i class="fa fa-clock-o mr-1"></i> Ene, 2019 - Dic, 2019</span>
-                                    <ul>
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Mantenimiento preventivo y correctivo de equipos informáticos
-                                        </li>
+                                
+                                    <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
+                                        <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
+                                        <h2 class="h5 mb-0"style="color:white !important">GADM Bolívar.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Pasante Informático<br> <i class="fa fa-clock-o mr-1"></i> Agos, 2014 - Oct, 2014</span>
+                                        <ul>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Mantenimiento preventivo y correctivo de equipos informáticos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programacion
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programación
+                                            </li>
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Digitador
-                                        </li>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Digitador
+                                            </li>
+                                        </ul>   
+                                    </li>
+                                
 
-                                        <li class="text-small mt-2 font-weight-light"style="color:white !important"> Redes Informáticas
-                                        </li>
-                                    </ul>   
-                                </li>
+                                
+                                    <li class="timeline_card-item rounded ml-3 p-4 shadow" style="background-color: rgb(154, 12, 248);">
+                                        <div class="timeline_card-arrow" style="border-right: 0.5rem solid rgb(154, 12, 248)"></div>
+                                        <h2 class="h5 mb-0"style="color:white !important">ESPAM MFL.</h2><span class="small text-gray" style="color:white !important"><i class="fa fa-desktop"></i> Pasante Informático<br> <i class="fa fa-clock-o mr-1"></i> Ago, 2013 - Oct, 2013</span>
+                                        <ul>
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Mantenimiento preventivo y correctivo de equipos informáticos
+                                            </li>
+
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Diseño y desarrollo de base de datos
+                                            </li>
+
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Programación
+                                            </li>
+
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Digitador
+                                            </li>
+
+                                            <li class="text-small mt-2 font-weight-light"style="color:white !important"> Redes Informáticas
+                                            </li>
+                                        </ul>   
+                                    </li>
+                               
                                
                             </ul><!-- End -->
             
@@ -192,39 +236,39 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- otro-->
+            <!-- experiencia-->
 
             
-            
-          
             <!-- curso-->
-            <section class="resume-section" id="cursos">
+            <section class="resume-section "id="cursos" >
                 <div class="resume-section-content">
                     <h2 class="mb-5 titulos" >Cursos</h2>
-                    <ul class="fa-ul mb-0" style="margin-left:100px">
-                        <li style="color:black" class="mb-2">
-                            <span class="fa-li"><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
-                            Curso de programación en PHP (Mentcolsa)
-                        </li>
-                        <li style="color:black" class="mb-2">
-                            <span class="fa-li"><i class="fas fa-trophy"style="color:rgb(53 7 83)"></i></span>
-                            Introducción al desarrollo web (Instituto de Economía Internacional)
-                        </li>
-                        <li style="color:black" class="mb-2">
-                            <span class="fa-li"><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
-                            Programación Javascript (Fundación Telefónica)
-                        </li>
-
-                        <li style="color:black"class="mb-2">
-                            <span class="fa-li"><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
-                            Curso de Api Rest con Laravel (Platzi)
-                        </li>
-
-                        <li style="color:black">
-                            <span class="fa-li"><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
-                            Curso de Bootstrap (Platzi)
-                        </li>
+                    <ul class="fa-ul mb-0 animadoaba" id="lista_curso" >
                         
+                            <li style="color:black" class="mb-2" >
+                                <span class="fa-li" id="icono_curso1" ><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
+                                <span id="txt_curso1" >Curso de programación en PHP (Mentcolsa)</span>
+                            </li>
+                       
+                            <li style="color:black" class="mb-2">
+                                <span class="fa-li"id="icono_curso2" ><i class="fas fa-trophy"style="color:rgb(53 7 83)"></i></span>
+                                <span id="txt_curso2" >Introducción al desarrollo web (Instituto de Economía Internacional)</span>
+                            </li>
+                            <li style="color:black" class="mb-2">
+                                <span class="fa-li"id="icono_curso3" ><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
+                                <span id="txt_curso3" >Programación Javascript (Fundación Telefónica)</span>
+                            </li>
+
+                            <li style="color:black"class="mb-2">
+                                <span class="fa-li" id="icono_curso4" ><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
+                                <span id="txt_curso4" >Curso de Api Rest con Laravel (Platzi)</span>
+                            </li>
+
+                            <li style="color:black">
+                                <span class="fa-li" id="icono_curso5"><i class="fas fa-trophy "style="color:rgb(53 7 83)"></i></span>
+                                <span id="txt_curso5" >Curso de Bootstrap (Platzi)</span>
+                            </li>
+                       
                     </ul>
                 </div>
             </section>
@@ -234,7 +278,7 @@
              <section class="resume-section" id="contacto">
                 <div class="resume-section-content">
                     <h2 class="mb-5 titulos" >Contactos</h2>
-                    <ul class="fa-ul mb-0" style="margin-left:100px">
+                    <ul class="fa-ul mb-0 animadoder" id="lista_contacto">
                         <li style="color:black"class="mb-2">
                             <span class="fa-li"><i class="fas fa-phone "style="color:rgb(53 7 83)"></i></span>
                             +593993984665
@@ -255,6 +299,8 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/animacion.js"></script>
     </body>
 </html>

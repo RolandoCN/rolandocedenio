@@ -1,0 +1,80 @@
+.animado{
+    opacity:0;
+    transition:all 0.5s;
+}
+
+.animadoaba{
+    opacity:0;
+    transition:all 0.5s;
+}
+
+.animadoizq{
+    opacity:0;
+    transition:all 0.5s;
+}
+
+.animadoder{
+    opacity:0;
+    transition:all 0.5s;
+}
+
+.mostrarArriba{
+    animation:mostrarArriba 3s;
+
+}
+
+.mostrarAbajo{
+    animation:mostrarAbajo 3s;
+
+}
+
+
+.mostrarIzquierda{
+    animation:mostrarIzquierda 3s;
+
+}
+
+.mostrarDerecha{
+    animation:mostrarDerecha 3s;
+
+}
+
+@keyframes mostrarArriba {
+    0%{
+        transform: translateY(60px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes mostrarAbajo {
+    0%{
+        transform: translateY(-60px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes mostrarIzquierda {
+    0%{
+        transform: translateX(60px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes mostrarDerecha {
+    0%{
+        transform: translateX(-60px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}

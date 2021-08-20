@@ -32,3 +32,11 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+$(document).ready(function(){
+   
+    $('#div_about').toggle("slow");
+    $('html,body').animate({scrollTop:$('#page-top').offset().top},400);
+   
+})
+
+
